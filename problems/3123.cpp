@@ -87,8 +87,8 @@ public:
             int to = edges[i][1];
             int weight = edges[i][2];
 
-            if (dist_start[from] + weight + dist_end[to] == shortest_path ||
-                dist_start[to] + weight + dist_end[from] == shortest_path)
+            if (static_cast<long long>(dist_start[from]) + weight + dist_end[to] == shortest_path ||
+                static_cast<long long>(dist_start[to]) + weight + dist_end[from] == shortest_path)
             {
                 answer[i] = true;
             }
