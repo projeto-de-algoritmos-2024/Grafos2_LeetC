@@ -1,44 +1,27 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# LeetCode
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
 
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 19<br>
+**Conteúdo da Disciplina**: Grafos 2<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| Matrícula | Aluno                 |
+| --------- | --------------------- |
+| 211061805 | Guilherme Westphall   |
+| 221022088 | Lucas Martins Gabriel |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O projeto consiste em resolver exercícios do site LeetCode, que é uma plataforma de competição de programação online que oferece desafios de programação. O objetivo é praticar e melhorar o entedenimento acerca dos algoritmos de grafos 2.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: C++<br>
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para usar o projeto, basta clonar o repositório e executar o arquivo .cpp desejado.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
 
