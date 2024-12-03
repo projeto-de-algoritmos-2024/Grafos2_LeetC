@@ -1,6 +1,5 @@
 # LeetCode
 
-
 **Número da Lista**: 19<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
 
@@ -10,8 +9,18 @@
 | 211061805 | Guilherme Westphall   |
 | 221022088 | Lucas Martins Gabriel |
 
+## Vídeo
+
+[Youtube](https://youtu.be/fmxYw_m4sS4)
+
 ## Sobre 
 O projeto consiste em resolver exercícios do site LeetCode, que é uma plataforma de competição de programação online que oferece desafios de programação. O objetivo é praticar e melhorar o entedenimento acerca dos algoritmos de grafos 2.
+
+| Número | Dificuldade |
+|--------|-------------|
+| [3342](https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/description/) | Média |
+| [3123](https://leetcode.com/problems/find-edges-in-shortest-paths/description/) | Difícil |
+| [2290](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/description/) | Difícil |
 
 ## Screenshots
 
