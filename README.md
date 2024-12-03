@@ -15,6 +15,17 @@ O projeto consiste em resolver exercícios do site LeetCode, que é uma platafor
 
 ## Screenshots
 
+### 3342
+
+![](./assets/3342-sub1.png)
+
+### 3123
+
+![](./assets/3123-sub1.png)
+
+### 2290
+
+![](./assets/22290-3.png)
 
 ## Instalação 
 **Linguagem**: C++<br>
