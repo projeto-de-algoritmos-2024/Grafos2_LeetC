@@ -20,7 +20,7 @@ O projeto consiste em resolver exercícios do site LeetCode, que é uma platafor
 **Linguagem**: C++<br>
 
 ## Uso 
-Para usar o projeto, basta clonar o repositório e executar o arquivo .cpp desejado.
+Para usar o projeto, basta clonar o repositório, compilar e executar o arquivo .cpp desejado.
 
 
 
