@@ -30,4 +30,28 @@ public:
         
         vector<pair<int, int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         
+        while (!pq.empty()) {
+            auto [cost, pos] = pq.top();
+            pq.pop();
+            int x = pos.first, y = pos.second;
+            
+            if (x == n - 1 && y == m - 1) {
+                return cost;
+            }
+            
+            for (auto& [dx, dy] : directions) {
+                int nx = x + dx, ny = y + dy;
+                if (nx >= 0 && nx < n && ny >= 0 && ny < m) {
+                    int newCost = cost + grid[ny][nx];
+                    
+                    if (newCost < dist[ny][nx]) {
+                        dist[ny][nx] = newCost;
+                        pq.push({newCost, {nx, ny}});
+                    }
+                }
+            }
+        }
+        
+        return -1;
+    }
 };
