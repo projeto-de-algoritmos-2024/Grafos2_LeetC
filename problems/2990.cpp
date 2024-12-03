@@ -9,61 +9,25 @@
  * 
  * Difficulty: Hard
  */
-#define pi pair<int, int>
+
 # include <iostream>
 # include <vector>
 # include <queue>
+# include <algorithm>
 
 using namespace std;
 
 class Solution {
-  public: 
-  int minimumObstacles(vector<vector<int>>& grid) {
-    int gridSize = grid.size();
-    int gridColSize = grid[0].size();
-    vector<vector<int>> visited(gridSize, vector<int>(gridColSize, 0));
-    priority_queue<pair<int, pair<pi, pi>>, vector<pair<int, pair<pi, pi>>>, greater<pair<int, pair<pi, pi>>>> pq;
-    pq.push({0, {{0, 0}, {0, 0}}});
-    while (!pq.empty()){
-        auto top = pq.top();
-        int ncost = top.first;
-        pi p1 = top.second.first;
-        pi p2 = top.second.second;
-        pq.pop();
-        int nx = p1.second, ny = p1.first;
-        if (nx == gridColSize - 1 && ny == gridSize - 1) {
-            return ncost;
-        }
-        visited[ny][nx] = 1;
-        if (nx + 1 < gridColSize){
-            if (!visited[ny][nx+1]){
-                int cost = grid[ny][nx+1];
-                pi p = {ny, nx+1};
-                pq.push({ncost + cost, {p, p1}});
-            }
-        }
-        if (nx - 1 >= 0){
-            if (!visited[ny][nx-1]){
-                int cost = grid[ny][nx-1];
-                pi p = {ny, nx-1};
-                pq.push({ncost + cost, {p, p1}});
-            }
-        }
-        if (ny + 1 < gridSize){
-            if (!visited[ny+1][nx]){
-                int cost = grid[ny+1][nx];
-                pi p = {ny+1, nx};
-                pq.push({ncost + cost, {p, p1}});
-            }
-        }
-        if (ny - 1 >= 0){
-            if (!visited[ny-1][nx]){
-                int cost = grid[ny-1][nx];
-                pi p = {ny-1, nx};
-                pq.push({ncost + cost, {p, p1}});
-            }
-        }
-    }
-    return -1;
-}
+public:
+    int minimumObstacles(vector<vector<int>>& grid) {
+        int m = grid.size(), n = grid[0].size();
+        
+        vector<vector<int>> dist(m, vector<int>(n, INT_MAX));
+        dist[0][0] = 0;
+        
+        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<>> pq;
+        pq.push({0, {0, 0}});
+        
+        vector<pair<int, int>> directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        
 };
